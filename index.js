@@ -1,5 +1,5 @@
 module.exports = {
-  onPreBuild: () => {
-    console.log('Hello world')
+  onPreBuild: async () => {
+    await run.command('touch test.html');
   },
 }
